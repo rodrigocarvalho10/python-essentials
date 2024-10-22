@@ -1,5 +1,5 @@
 """
-Imprimea a tabuada do 1 ao 10
+Imprime a a tabuada do 1 ao 10
 """
 __version__ = "0.1.1"
 __author__ = "Rodrigo"

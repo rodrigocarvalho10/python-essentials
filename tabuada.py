@@ -4,7 +4,7 @@ Imprimea a tabuada do 1 ao 10
 __version__ = "0.1.0"
 __author__ = "Rodrigo"
 
-#Aqui definimos o intervalo de números a serem cálculados pela tabuada
+# Definicao dos numeros a serem calculados
 numeros = list(range(1, 11))
 
 for numero in numeros:

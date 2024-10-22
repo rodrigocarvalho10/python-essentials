@@ -8,7 +8,7 @@ __author__ = "Rodrigo"
 numeros = list(range(1, 11))
 
 for n1 in numeros:
-    print("{:-^20}".format(f"Tabuado do {n1}"))
+    print("{:-^20}".format(f"Tabuada do {n1}"))
     for n2 in numeros:
         resultado = n1 * n2
         print("{:^18}".format(f"{n1} x {n2} = {resultado}"))

@@ -3,7 +3,7 @@
 Imprimir a lista de crian�as agrupadas por sala
 que frequenta cada uma das atividades.
 """
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 sala1 = ["Erik", "Maia", "Gustavo", "Manuel", "Sofia", "Liz", "Davi"]
 sala2 = ["Joao", "Antonio", "Carlos", "Manuela", "Joana", "Lucas", "Maria"]
@@ -23,14 +23,8 @@ for nome_atividade, atividade in atividades:
     print(f"\nAlunos da aula de {nome_atividade}\n")
     print("-" * 60)
 
-    atividades_sala1 = []
-    atividades_sala2 = []
-
-    for aluno in atividade:
-        if aluno in sala1:
-            atividades_sala1.append(aluno)
-        elif aluno in sala2:
-            atividades_sala2.append(aluno)
+    atividades_sala1 = set(sala1) & set(atividade)
+    atividades_sala2 = set(sala2) & set(atividade)
 
     print(f"Sala1",atividades_sala1)
     print(f"Sala2",atividades_sala2)
